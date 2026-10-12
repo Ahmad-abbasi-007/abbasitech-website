@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0B1A33"/>
+  
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#1687FF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0B1A33" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  
+  <!-- ==================== BIG "A" LETTER ==================== -->
+  <g transform="translate(400, 210)">
+    <!-- Left leg (lighter blue) -->
+    <polygon points="-90,140 -110,140 -20,-130 10,-130" fill="#4DA6FF"/>
+    <!-- Right leg (darker blue) -->
+    <polygon points="20,-130 50,-130 110,140 90,140" fill="#1687FF"/>
+    <!-- Inner gap -->
+    <polygon points="-20,-130 10,-130 20,-130 50,-130 40,-90 0,-90" fill="#0B1A33"/>
+    
+    <!-- White swoosh -->
+    <path d="M -100, 20 Q 0, -30 180, -70 L 175, -55 Q 0, -10 -95, 35 Z" fill="#F4F7FB"/>
+    <path d="M -95, 35 Q 0, -10 175, -55 L 170, -45 Q 0, -5 -90, 40 Z" fill="#D8E4F0" opacity="0.5"/>
+  </g>
+  
+  <!-- ==================== COMPANY NAME ==================== -->
+  <!-- Using tspan for colored words -->
+  <text 
+    x="400" 
+    y="470" 
+    font-family="Poppins, Arial, sans-serif" 
+    font-size="92" 
+    font-weight="900" 
+    text-anchor="middle"
+    letter-spacing="-3"
+  >
+    <tspan fill="#F4F7FB">Abbasi</tspan><tspan fill="#1687FF">Tech</tspan>
+  </text>
+  
+  <!-- ==================== TAGLINE ==================== -->
+  <text 
+    x="400" 
+    y="535" 
+    font-family="Arial, sans-serif" 
+    font-size="20" 
+    font-weight="600" 
+    fill="#F4F7FB" 
+    text-anchor="middle"
+    letter-spacing="8"
+  >IDEAS → CODE → IMPACT</text>
+</svg>

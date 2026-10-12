@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import BrandLogo from "./BrandLogo";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,13 +24,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-gradient-to-br from-[#1687FF] to-[#4DA6FF] flex items-center justify-center font-bold text-white text-base sm:text-lg shadow-lg shadow-[#1687FF]/30 group-hover:shadow-[#1687FF]/50 transition">
-            A
-          </div>
-          <h1 className="text-lg sm:text-xl font-bold font-poppins tracking-tight">
-            Abbasi<span className="text-[#1687FF]">Tech</span>
-          </h1>
+        <a href="#" className="flex items-center group">
+          <BrandLogo compact showTagline={false} className="items-center" />
         </a>
 
         {/* Desktop menu */}
